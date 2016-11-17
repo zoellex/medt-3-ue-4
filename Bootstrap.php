@@ -37,9 +37,12 @@
 
 </head>
 <body>
+
 <div class="wrapper">
+
 <h3><ins>Anmeldeinfos bitte eingeben:</ins></h3>
-  <form action="http://127.0.0.1/medt/ue4/Bootstrap.php">
+
+  <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
     <div class="form-group">
     <label>Vorname:</label>
     <input class="form-control" name="vn" type="text">
@@ -57,6 +60,7 @@
 
   <button type="submit" class="btn btn-default btn-lg active" name="submitBTN">Submit</button>
   </form>
+
 </div>
 
 <div class="inside">
